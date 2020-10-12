@@ -16,8 +16,8 @@ function OrfanagesMap() {
                     <p>Muitas crianças estão esperando a sua visita :)</p>
                 </header>
                 <footer>
-                    <strong>Rio do sul</strong>
-                    <span>Santa Catarina</span>
+                    <strong>Brasilia</strong>
+                    <span>Distrito Federal</span>
                 </footer>
             </aside>
             <Map

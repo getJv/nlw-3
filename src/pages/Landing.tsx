@@ -14,8 +14,8 @@ function Landing() {
           <p>Visite orfanatos e mude o dia de muitas crianças.</p>
         </main>
         <div className="location">
-          <strong>Rio do sul</strong>
-          <span>Santa Catarina</span>
+          <strong>Brasília</strong>
+          <span>Distrito federal</span>
         </div>
         <Link to="/app" className="enter-app">
           <FiArrowRight size={26} color="rgba(0,0,0,0.6)"/>
