@@ -12,7 +12,7 @@ function OrfanagesMap() {
             <aside>
                 <header>
                     <img src={mapMarkerImg} alt="Happy logo" />
-                    <h2>Escolha um orfanato no mapa</h2>
+                    <h2>Escolha um orfanato no mapa 2</h2>
                     <p>Muitas crianças estão esperando a sua visita :)</p>
                 </header>
                 <footer>
