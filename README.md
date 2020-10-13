@@ -5,7 +5,8 @@ The app show to people where is the nearest orphanages and provide information a
 
 ## App Live preview
 
-[https://happy-nlw3.herokuapp.com](https://happy-nlw3.herokuapp.com/)
+- Preview: [https://happy-nlw3.herokuapp.com](https://happy-nlw3.herokuapp.com/)
+- [Backend repository](https://github.com/getJv/nlw-3-backend)
 
 <img width="800" src="https://media.giphy.com/media/YrbFN1e0U8UY6SR2KV/giphy.gif" />
 
@@ -13,3 +14,4 @@ The app show to people where is the nearest orphanages and provide information a
 
 - React,
 - OpenStreetMap
+- NodeJs (Backend)
