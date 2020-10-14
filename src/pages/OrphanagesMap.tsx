@@ -1,10 +1,12 @@
 import React from 'react'
 import mapMarkerImg from '../images/map-marker.svg'
 import { Link } from 'react-router-dom'
-import { FiPlus } from 'react-icons/fi'
+import { FiPlus, FiArrowRight } from 'react-icons/fi'
 import '../styles/pages/orphanages-map.css'
-import 'leaflet/dist/leaflet.css'
-import { Map,TileLayer } from 'react-leaflet'; 
+
+import { Map, TileLayer, Marker, Popup } from 'react-leaflet'; 
+import mapIcon from '../utils/mapIcon'
+
 
 function OrfanagesMap() { 
     return (
@@ -26,9 +28,23 @@ function OrfanagesMap() {
                 style={{width:'100%',height:'100%'}}
             >
                 <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-                 
+
+                <Marker
+                    position={[-15.79152, -47.8921486]}
+                    icon={mapIcon}
+                >
+                    <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup" >
+                        lar das peninas
+                         <Link to="orphanages/1">
+                            <FiArrowRight size={20} color='#FFF' />
+                            
+                         </Link>
+                    </Popup>
+
+                </Marker>
+                
             </Map>
-            <Link to="" className="create-orphanage">
+            <Link to="orphanages/create" className="create-orphanage">
                 <FiPlus size={32} color="#FFF"/>
 
             </Link>
