@@ -142,7 +142,7 @@ export default function CreateOrphanage() {
                 </label>
                 
               </div>
-              <input multiple onChange={handleSelectedImages} type="file" id="image[]"/>
+              <input multiple  onChange={handleSelectedImages} type="file" id="image[]"/>
 
               
             </div>
