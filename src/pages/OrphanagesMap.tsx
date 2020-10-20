@@ -27,8 +27,8 @@ function OrfanagesMap() {
      */
     useEffect(() => { 
         api.get('https://raw.githubusercontent.com/getJv/nlw-3/master/src/data/fake-data.json').then(res => { 
-        console.log(res.data)    
-        //setOrphanages(res);
+           
+        setOrphanages(res.data);
         })
         /* api.get('/orphanages').then(res => { 
             setOrphanages(res.data);
@@ -56,12 +56,12 @@ function OrfanagesMap() {
                 
                 <TileLayer url={`https://api.mapbox.com/styles/v1/mapbox/light-v10/tiles/256/{z}/{x}/{y}@2x?access_token=${process.env.REACT_APP_MAPBOX_TOKEN}`}/>
 
-                {orphanages.map(orphanage => {
+                {orphanages.map((orphanage,index) => {
                     return (
                         <Marker
                             position={[orphanage.latitude, orphanage.longitude]}
                             icon={mapIcon}
-                            key={orphanage.id}
+                            key={index}
                 >
                     <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup" >
                                 {orphanage.name}
