@@ -27,7 +27,7 @@ function OrfanagesMap() {
      */
     useEffect(() => { 
         api.get('https://raw.githubusercontent.com/getJv/nlw-3/master/src/data/fake-data.json').then(res => { 
-        console.log(JSON.parse(res.data))    
+        console.log(res.data)    
         //setOrphanages(res);
         })
         /* api.get('/orphanages').then(res => { 
