@@ -33,14 +33,14 @@ interface OrphanageParams {
 
 export default function Orphanage() {
   
-  const [orphanage, setOrphanages] = useState<Orphanage>();
+  const [orphanage, setOrphanage] = useState<Orphanage>();
   const params = useParams<OrphanageParams>();
   const [activeImageIndex, setActiveImageIndex] = useState(0);
     
 
     useEffect(() => { 
         api.get(`/orphanages/${params.id}`).then(res => { 
-            setOrphanages(res.data);
+            setOrphanage(res.data);
         })
     }, [params.id]);
   

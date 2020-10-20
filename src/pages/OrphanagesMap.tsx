@@ -26,9 +26,13 @@ function OrfanagesMap() {
      * o segunda parametro sendo um vetor vazio é que a faz executar apeanas uma vez
      */
     useEffect(() => { 
-        api.get('/orphanages').then(res => { 
-            setOrphanages(res.data);
+        api.get('https://raw.githubusercontent.com/getJv/nlw-3/master/src/data/fake-data.json').then(res => { 
+        console.log(JSON.parse(res.data))    
+        //setOrphanages(res);
         })
+        /* api.get('/orphanages').then(res => { 
+            setOrphanages(res.data);
+        }) */
      }, []);
 {/* <TileLayer url="https://a.tile.openstreetmap.org/{z}/{x}/{y}.png"/> */}
     return (
