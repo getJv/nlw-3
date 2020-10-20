@@ -45,7 +45,7 @@ function OrfanagesMap() {
                 </footer>
             </aside>
             <Map
-                center={[-15.7637693,-47.7860986]}
+                center={[-15.7931994,-47.88613]}
                 zoom={15}
                 style={{width:'100%',height:'100%'}}
             >
