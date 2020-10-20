@@ -12,7 +12,7 @@ import mapIcon from '../utils/mapIcon';
 import api from '../services/api';
 
 interface Orphanage { 
-    id: number;
+    id: string;
     latitude: number;
     longitude: number;
     name: string;
@@ -39,8 +39,14 @@ export default function Orphanage() {
     
 
     useEffect(() => { 
-        api.get(`/orphanages/${params.id}`).then(res => { 
+       /*  api.get(`/orphanages/${params.id}`).then(res => { 
             setOrphanage(res.data);
+        }) */
+        api.get('https://raw.githubusercontent.com/getJv/nlw-3/master/src/data/fake-data.json').then(res => { 
+          var obj = res.data.find((item: Orphanage) => { 
+            return item.id === params.id;
+          } )
+          setOrphanage(obj);
         })
     }, [params.id]);
   

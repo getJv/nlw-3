@@ -61,7 +61,7 @@ function OrfanagesMap() {
                         <Marker
                             position={[orphanage.latitude, orphanage.longitude]}
                             icon={mapIcon}
-                            key={index}
+                            key={orphanage.id}
                 >
                     <Popup closeButton={false} minWidth={240} maxWidth={240} className="map-popup" >
                                 {orphanage.name}
