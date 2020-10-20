@@ -15,13 +15,14 @@
 <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
 </p>
 <p align="center">
-<img align="center" alt="gif preview"  src="https://media.giphy.com/media/XXiqUbzNomLS826k10/giphy.gif" />
+<img width="100%" alt="gif preview"  src="https://media.giphy.com/media/XXiqUbzNomLS826k10/giphy.gif" />
 </p>    
 
 ## 🔖 Project
 
 The Happy is a app developed at [3º Next Level Week event](https://nextlevelweek.com/) by [RocketSeat](https://rocketseat.com.br/) company.
 The app show to people where is the nearest orphanages and provide information about how to connect to them and theirs children.
+The original project reference is hosted at [Rocketseat repository.](https://github.com/rocketseat-education/nlw-03-omnistack)
 
 ## 💻 Livepreview
 
