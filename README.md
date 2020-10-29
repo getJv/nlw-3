@@ -15,7 +15,7 @@
 <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=15C3D6&labelColor=000000">
 </p>
 <p align="center">
-<img width="100%" alt="gif preview"  src="https://media.giphy.com/media/XXiqUbzNomLS826k10/giphy.gif" />
+<img width="100%" alt="gif preview"  src=".github/preview.gif" />
 </p>    
 
 ## 🔖 Project
